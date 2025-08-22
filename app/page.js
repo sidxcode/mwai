@@ -140,7 +140,7 @@ export default function Home() {
 
   return (
     <div className="">
-      <main className="min-h-screen flex items-center justify-center bg-black text-white">
+      <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
         <div className="prompt-container flex items-center gap-16">
           <p className="text-xl" style={{ fontFamily: 'var(--font-satoshi)', fontWeight: '700' }}>
             Prompt
@@ -162,6 +162,14 @@ export default function Home() {
             <InputWithSuggestions options={styleOptions} placeholder="Style" />
           </div>
         </div>
+
+        <button
+          type="button"
+          className="mt-10 px-8 py-6 rounded-md bg-white text-black text-2xl leading-none shadow hover:bg-white/90 active:translate-y-px"
+          style={{ fontFamily: 'var(--font-satoshi)', fontWeight: '600' }}
+        >
+          Generate
+        </button>
       </main>
     </div>
   );
